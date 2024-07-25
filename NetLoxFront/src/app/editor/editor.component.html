@@ -1,0 +1,16 @@
+<div class="content">
+    <form class="code-form" [formGroup]="sourceForm">
+        <div class="full-width">
+            <textarea class="coderegion" formControlName="inputSource" placeholder="type your sources here..." rows="5"></textarea>
+        </div>
+
+        <button class="buttons" type="submit" (click)="submitSource()">
+            <ng-icon name="bootstrapPlayCircle" size="4em"></ng-icon>
+        </button>
+
+        <div class="full-width">
+            <textarea class="coderegion" formControlName="output" rows="5"></textarea>
+        </div>
+    </form>
+</div>
+  
